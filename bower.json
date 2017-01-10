@@ -4,9 +4,10 @@
     "gothic-prince <gothic27prince@gmail.com>"
   ],
   "description": "",
-  "dependencies": [
-    "https://github.com/seven-phases-max/less.curious.git"
-  ],
+  "dependencies":
+  {
+    "https://github.com/seven-phases-max/less.curious.git": "*"
+  },
   "main": "",
   "license": "MIT",
   "homepage": "",
