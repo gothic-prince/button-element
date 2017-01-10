@@ -6,7 +6,7 @@
   "description": "",
   "dependencies":
   {
-    "less.curious": "*"
+    "https://github.com/seven-phases-max/less.curious.git": "*"
   },
   "main": "",
   "license": "MIT",
