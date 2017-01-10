@@ -1,0 +1,26 @@
+@import "../../../less.curious/src/for";
+
+@styles: solid, dashed, dotted, double, groove, inset, outset, ridge;
+
+.form-element
+{
+  .for(@styles);
+  .-each(@value)
+  {
+    .form-element__element.element_border-style-@{value},
+    .fe__e.e_bs-@{value}
+    {
+      border-style: @value;
+    }
+    .form-element__button.button_border-style-@{value},
+    .fe__b.b_bs-@{value}
+    {
+      border-style: @value;
+    }
+    .form-element__input.input_border-style-@{value},
+    .fe__i.i_bs-@{value}
+    {
+      border-style: @value;
+    }
+  }
+}

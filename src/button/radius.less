@@ -1,9 +1,13 @@
 @import "../../../less.curious/src/for";
-.for(1px, 45px);
-.-each(@value)
+.form-element
 {
-  & .button-element.button-element__button.button_radius-@{value}
+  .for(1px, 45px);
+  .-each(@value)
   {
-    border-radius: @value;
+    & .form-element__button.button_radius-@{value},
+    & .fe__b.b_br-@{value}
+    {
+      border-radius: @value;
+    }
   }
 }

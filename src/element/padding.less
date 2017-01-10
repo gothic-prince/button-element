@@ -1,0 +1,47 @@
+@import "../../../less.curious/src/for";
+.form-element
+{
+  .for(1px, 50px);
+  .-each(@value)
+  {
+    @size: @value * 5;
+
+    & .form-element__element.element_padding-left-right-@{size},
+    & .fe__e.e_p-lr-@{size}
+    {
+      padding-right: @size;
+      padding-left: @size;
+    }
+    & .form-element__button.button_padding-left-right-@{size},
+    & .fe__b.b_p-lr-@{size}
+    {
+      padding-right: @size;
+      padding-left: @size;
+    }
+    & .form-element__input.input_padding-left-right-@{size},
+    & .fe__i.i_p-p-lr-@{size}
+    {
+      padding-right: @size;
+      padding-left: @size;
+    }
+
+    & .form-element__element.element_padding-top-bottom-@{size},
+    & .fe__element.e_p-tb-@{size}
+    {
+      padding-top: @size;
+      padding-bottom: @size;
+    }
+    & .form-element__button.button_padding-top-bottom-@{size},
+    & .fe__b.b_p-tb-@{size}
+    {
+      padding-top: @size;
+      padding-bottom: @size;
+    }
+    & .form-element__input.input_padding-top-bottom-@{size},
+    & .fe__i.i_p-tb-@{size}
+    {
+      padding-top: @size;
+      padding-bottom: @size;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../less.curious/src/for";
+.form-element
+{
+  .for(1px, 10px);
+  .-each(@value)
+  {
+    & .form-element__element.element_border-weight-@{value},
+    & .fe__e.e_bw-@{value}
+    {
+      border-width: @value;
+    }
+    & .form-element__button.button_border-weight-@{value},
+    & .fe__b.b_bw-@{value}
+    {
+      border-width: @value;
+    }
+    & .form-element__input.input_border-weight-@{value},
+    & .fe__i.i_bw-@{value}
+    {
+      border-width: @value;
+    }
+  }
+}
