@@ -1,0 +1,9 @@
+@import "../../dependences/for";
+.for(1px, 45px);
+.-each(@value)
+{
+  & .button-element.button-element__button.button_radius-@{value}
+  {
+    border-radius: @value;
+  }
+}
